@@ -1,0 +1,994 @@
+@charset "UTF-8";
+
+/**
+    Author: Rifat Bhiuya
+    Author email: hello.rifatbhuiya@gmail.com
+    Version: 0.0.0.1
+*/
+
+/**
+----------------
+Table Of Content
+----------------
+0. Common CSS Start
+1. Header CSS Start
+2. Home Hero CSS Start
+3. Our boats CSS Start
+4. Canal-cruising CSS Start
+5. Whixall-marina CSS Start
+6. Cruise-stay CSS Start
+7. BTT CSS Start
+8. Footer CSS Start
+9. Boat Page CSS Start
+10. Canal cruising page CSS Start
+11. Whixall-marina-page CSS Start
+12. Contact us CSS Start
+*/
+
+:root { 
+    /* Colors */
+    --primary_color: #4b7e37;
+    --secondary_color: #729357;
+    --tertiary_color: #90c33b;
+    --yellow_color: #ffef7d;
+    --white_color: #ffffff;
+    --gray_color: #e9eee4;
+    --black_color: #000000;
+
+    /* Round */
+    --round_sm: 5px;
+    --round_md: 10px;
+    --round_lg: 25px;
+    --round_full: 50%;
+
+    /* Typography - {Typescale, 16px based - 1.200 major thread} */
+    --big_title: 52px;
+    --h1: 48px;
+    --h2: 40px;
+    --h3: 33px;
+    --h4: 27px;
+    --h5: 23px;
+    --h6: 19px;
+    --lg: 19px;
+    --bs: 16px;
+    --sm: 13px;
+
+    /* Duration */
+    --transition: all ease-in-out .5s;
+
+    /* Font Family */
+    --sans_serif: "Open Sans", sans-serif;
+    --serif: "Libre Baskerville", serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+ol,
+li,
+span,
+address,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+img,
+svg {
+    vertical-align: middle;
+}
+
+h1 {
+    font-size: var(--h1);
+}
+
+h2 {
+    font-size: var(--h2);
+}
+
+h3 {
+    font-size: var(--h3);
+}
+
+h4 {
+    font-size: var(--h4);
+}
+
+h5 {
+    font-size: var(--h5);
+}
+
+h6 {
+    font-size: var(--h6);
+}
+
+a,
+button {
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+body {
+    scroll-behavior: smooth;
+    font-size: var(--bs);
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: var(--sans_serif);
+}
+
+.bg-gray {
+    background-color: var(--gray_color);
+}
+
+.page-hero-slider {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.home-hero-slider .next,
+.home-hero-slider .prev, 
+.page-hero-slider .next,
+.page-hero-slider .prev {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    cursor: pointer;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.home-hero-slider .next svg,
+.home-hero-slider .prev svg, 
+.page-hero-slider .next svg,
+.page-hero-slider .prev svg {
+    height: 48px;
+    width: 48px;
+    color: var(--white_color);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.home-hero-slider .next:hover svg,
+.home-hero-slider .prev:hover svg, 
+.page-hero-slider .next:hover svg,
+.page-hero-slider .prev:hover svg {
+    color: var(--blue_color);
+}
+
+.home-hero-slider .prev,
+.page-hero-slider .prev {
+    left: 20px;
+}
+
+.home-hero-slider .next,
+.page-hero-slider .next {
+    right: 20px;
+}
+
+.page-hero-slider .slider-content {
+    height: 700px;
+    z-index: 1;
+}
+/* Common CSS End */
+
+.main-header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.main-header.fixed-header {
+    animation: sticky-anim .5s linear 1;
+    -webkit-animation: sticky-anim .5s linear 1;
+}
+
+@keyframes sticky-anim {
+    0%{
+        top: -32px;
+    }
+    100%{
+        top: 0;
+    }
+}
+
+.main-header .header-top {
+    padding: 20px 0;
+    background-color: var(--primary_color);
+}
+
+.main-header .header-top p {
+    font-size: var(--lg);
+    font-weight: 600;
+    color: var(--yellow_color);
+}
+
+.main-header .header-top p a {
+    padding: 4px 6px;
+    line-height: 1.3;
+    font-weight: 500;
+    color: var(--primary_color);
+    background-color: var(--yellow_color);
+}
+
+.main-header .header-top p a:hover {
+    opacity: .8;
+}
+
+.main-header .header-bottom {
+    background-color: var(--secondary_color);
+}
+
+.main-header .header-bottom .solidbar {
+    display: none;
+    background-color: transparent;
+    border: none;
+}
+
+.main-header .header-bottom .solidbar i {
+    font-size: 22px;
+    padding: 8px;
+    color: var(--secondary_color);
+    background-color: var(--white_color);
+    border-radius: var(--round_md);
+    -webkit-border-radius: var(--round_md);
+    -moz-border-radius: var(--round_md);
+    -ms-border-radius: var(--round_md);
+    -o-border-radius: var(--round_md);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.main-header .header-bottom .solidbar.active i,
+.main-header .header-bottom .solidbar:hover i {
+    background-color: var(--yellow_color);
+}
+
+.main-header .header-bottom ul li {
+    padding: 12px 0;
+}
+
+.main-header .header-bottom ul li a {
+    color: var(--white_color);
+    font-size: var(--lg);
+    padding: 0 20px;
+}
+
+.main-header .header-bottom ul li a.active,
+.main-header .header-bottom ul li a:hover {
+    font-weight: 600;
+    color: var(--yellow_color);
+}
+
+.main-header .header-bottom ul li.hover-dropdown {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.main-header .header-bottom ul li.hover-dropdown .hover-dropdown-child {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    padding: 4px 16px;
+    background-color: rgba(75, 126, 55, 0.8);
+    width: 100%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    display: none;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.main-header .header-bottom ul li.hover-dropdown:hover .hover-dropdown-parent {
+    font-weight: 600;
+    color: var(--yellow_color);
+}
+
+.main-header .header-bottom ul li.hover-dropdown:hover .hover-dropdown-child {
+    display: block;
+}
+
+.main-header .header-bottom ul li.hover-dropdown .hover-dropdown-child li {
+    padding: 4px 0;
+}
+
+.main-header .header-bottom ul li.hover-dropdown .hover-dropdown-child li a {
+    padding: 0;
+}
+/* Header CSS End */
+
+.home-hero-slider {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.home-hero-slider .slider-content {
+    height: 700px;
+}
+
+.home-hero-slider .slider-content-inner {
+    color: var(--white_color);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    margin-bottom: 40px;
+}
+
+.home-hero-slider .slider-content-inner h2 {
+    font-family: var(--serif);
+    line-height: 1.5;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+/* Home Hero CSS End */
+
+.luxury-boats .top {
+    padding: 24px 0;
+    color: var(--white_color);
+    background-color: var(--primary_color);
+}
+
+.luxury-boats .top h1 {
+    font-size: var(--big_title);
+    font-family: var(--serif);
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.luxury-boats .bottom .card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}    
+.luxury-boats .bottom p {
+    --lg: 24px;
+    font-size: var(--lg);
+    font-weight: 600;
+    color: var(--primary_color);
+}
+
+.luxury-boats .bottom .boat-card {
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.luxury-boats .bottom .boat-card .img {
+    margin-bottom: 8px;
+}
+
+.luxury-boats .bottom .boat-card .img img {
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+    object-fit: cover;
+    object-position: center;
+    height: 100%;    
+}
+
+.luxury-boats .bottom .boat-card:hover .img img {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}
+
+.luxury-boats .bottom .boat-card h5 {
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: rgba(0, 0, 0, 0.9);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.luxury-boats .bottom .boat-card:hover h5 {
+    color: var(--tertiary_color);
+}
+
+.luxury-boats .bottom .boat-card h6 {
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.8);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.luxury-boats .bottom .boat-card:hover h6 {
+    color: var(--tertiary_color);
+}
+/* Our boats CSS End */
+
+.canal-cruising {
+    background-color: var(--gray_color);
+}
+
+.canal-cruising h2 {
+    font-size: var(--big_title);
+    font-family: var(--serif);
+    font-weight: 700;
+    line-height: 1.4;
+    color: var(--primary_color);
+}
+
+.canal-cruising p.text-primary-color {
+    --lg: 20px;
+    font-weight: 600;
+    color: var(--primary_color);
+}
+
+.canal-cruising p {
+    font-weight: 500;
+    font-size: var(--lg);
+}
+
+.canal-cruising .action {
+    padding: 8px 80px;
+    color: var(--white_color);
+    font-size: var(--lg);
+    background-color: var(--tertiary_color);
+}
+
+.canal-cruising .action:hover {
+    opacity: .8;
+}
+/* Canal-cruising CSS End */
+
+.whixall-marina h2 {
+    font-size: var(--big_title);
+    font-weight: 700;
+    font-family: var(--serif);
+}
+
+.whixall-marina .images img {
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.whixall-marina p {
+    font-size: var(--lg);
+    color: var(--primary_color);
+}
+/* Whixall-marina CSS End */
+
+.cruise-stay .top {
+    padding: 24px 0;
+    color: var(--white_color);
+    background-color: var(--tertiary_color);
+}
+
+.cruise-stay .top h2 {
+    font-size: var(--big_title);
+    font-family: var(--serif);
+}
+
+.cruise-stay .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cruise-stay .holiday-card h5 {
+    margin: 24px 0;
+    color: var(--primary_color);
+    font-weight: 600;
+}
+
+.cruise-stay .holiday-card .img img {
+    height: 240px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.cruise-stay .holiday-card .action {
+    padding: 8px 0;
+    width: 100%;
+    font-size: var(--lg);
+    color: var(--white_color);
+    background-color: var(--tertiary_color);
+}
+
+.cruise-stay .holiday-card .action:hover {
+    opacity: .8;
+}
+
+.cruise-stay p {
+    font-size: var(--lg);
+    color: var(--primary_color);
+}
+
+.cruise-stay p a {
+    color: var(--primary_color);
+}
+
+.cruise-stay p a:hover {
+    text-decoration: underline;
+}
+/* Cruise-stay CSS End */
+
+.btt {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 30;
+}
+
+.btt i {
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    font-size: var(--lg);
+    box-shadow: .5px .5px 3px 0 rgba(0, 0, 0, 0.5);
+    text-align: center;
+    background-color: var(--primary_color);
+    color: var(--white_color);
+    border-radius: var(--round_full);
+    -webkit-border-radius: var(--round_full);
+    -moz-border-radius: var(--round_full);
+    -ms-border-radius: var(--round_full);
+    -o-border-radius: var(--round_full);
+}
+/* BTT CSS End */
+
+.main-footer {
+    padding: 40px 0;
+    color: var(--white_color);
+    background-color: var(--primary_color);
+}
+
+.main-footer a {
+    color: var(--white_color);
+}
+
+.main-footer .contact-details li {
+    font-weight: 300;
+}
+
+.main-footer .contact-details a:hover {
+    opacity: .8;
+    text-decoration: underline;
+}
+
+.main-footer .footer-page-navigation a {
+    padding-bottom: 8px;
+    font-weight: 300;
+}
+
+.main-footer .footer-page-navigation a:hover {
+    color: var(--yellow_color);
+    font-weight: 500;
+}
+
+.main-footer .footer-page-navigation li:last-child a {
+    padding-bottom: 0;
+}
+/* Footer CSS End */
+
+.about h1 {
+    font-size: var(--big_title);
+    font-weight: 700;
+    color: var(--primary_color);
+    font-family: var(--serif);
+}
+
+.about .card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.about .about-card h6 {
+    margin-top: 4px;
+    font-weight: 600;
+    color: var(--tertiary_color);
+}
+
+.about .about-card .img {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.about .about-card .total-users {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    font-weight: 700;
+    --lg: 30px;
+    font-size: var(--lg);
+    color: var(--white_color);
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.about p {
+    font-size: var(--lg);
+    font-weight: 600;
+    color: var(--primary_color);
+}
+
+.accommodation {
+    color: var(--primary_color);
+    background-color: var(--yellow_color);
+}
+
+.accommodation ul {
+    list-style: inside;
+}
+
+.accommodation ul li {
+    padding: 2px 0;
+    font-size: var(--lg);
+    font-weight: 500;
+}
+
+.boat-layout h2 {
+    font-size: var(--big_title);
+    font-family: var(--serif);
+    color: var(--primary_color);
+    font-weight: 700;
+}
+
+.boat-layout .action {
+    --lg: 30px;
+    font-family: var(--serif);
+    padding: 8px 30px;
+    font-size: var(--lg);
+    color: var(--white_color);
+    background-color: var(--tertiary_color);
+}
+
+.boat-layout .action:hover {
+    opacity: .8;
+}
+
+.boat-page.images-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.boat-page.images-grid a {
+    overflow: hidden;
+}
+
+.boat-page.images-grid img {
+    height: 240px;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.boat-page.images-grid a:hover img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+/* Boat Page CSS End */
+
+.canal-cruising-heaven .top {
+    padding: 24px 0;
+    color: var(--white_color);
+    background-color: var(--tertiary_color);
+}
+
+.canal-cruising-heaven .top h1 {
+    font-family: var(--serif);
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.canal-cruising-heaven .text-lg {
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: var(--h5);
+    color: var(--primary_color);
+}
+
+.canal-cruising-heaven p {
+    font-size: var(--lg);
+    color: var(--primary_color);
+}
+
+.canal-map-title {
+    padding: 16px 0;
+    background-color: var(--gray_color);
+    font-family: var(--serif);
+    color: var(--primary_color);
+}
+
+.canal-map-title h2 {
+    font-size: var(--h1);
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.canal-map-title h3 {
+    font-size: var(--h2);
+    font-weight: 700;
+}
+
+.canal-map h4 {
+    font-weight: 700;
+    font-size: var(--h2);
+    color: var(--tertiary_color);
+    font-family: var(--serif);
+}
+
+.canal-map h5 {
+    font-weight: 500;
+    color: var(--primary_color);
+    line-height: 1.5;
+    font-size: var(--h4);
+}
+
+.canal-map .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+
+.canal-map .card-grid h6 {
+    font-weight: 700;
+    margin-top: 4px;
+    color: var(--tertiary_color);
+}
+
+.canal-map p {
+    color: var(--primary_color);
+    font-size: var(--lg);
+}
+
+.canal-map a {
+    font-size: var(--lg);
+    color: var(--tertiary_color);
+}
+
+.canal-map a:hover {
+    opacity: .8;
+    text-decoration: underline;
+}
+/* Canal cruising Page CSS End */
+
+.whixall-marina-page .top {
+    padding: 24px 0;
+    color: var(--white_color);
+    background-color: var(--tertiary_color);
+}
+
+.whixall-marina-page .top h1 {
+    font-size: var(--big_title);
+    font-weight: 700;
+    line-height: 1.4;
+    font-family: var(--serif);
+}
+
+.whixall-marina-page p {
+    color: var(--primary_color);
+    font-size: var(--lg);
+}
+
+.whixall-marina-page p.text-lg {
+    font-size: var(--h5);
+    font-weight: 700;
+}
+
+.whixall-marina-page p.action a {
+    color: var(--tertiary_color);
+}
+
+.whixall-marina-page p.action a:hover {
+    text-decoration: underline;
+    opacity: .8;
+}
+
+.whixall-marina-page.images-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.whixall-marina-page.images-grid a {
+    overflow: hidden;
+}
+
+.whixall-marina-page.images-grid img {
+    height: 240px;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.whixall-marina-page.images-grid a:hover img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+/* Whixall-marina-page CSS End */
+
+.contact-us h1 {
+    color: var(--primary_color);
+    font-weight: 700;
+    font-family: var(--serif);
+    font-size: var(--big_title);
+}
+
+.contact-us .logo {
+    background-color: var(--primary_color);
+}
+
+.contact-us h5 {
+    font-weight: 700;
+}
+
+.contact-us address {
+    font-size: var(--lg);
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.contact-us .contact-details a {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: var(--lg);
+}
+
+.contact-us .contact-details a:hover {
+    text-decoration: underline;
+    opacity: .8;
+}
+
+.contact-us p {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: var(--lg);
+}
+
+.contact-us input,
+.contact-us textarea {
+    width: 100%;
+    border: none;
+    padding: 8px 40px;
+    background-color: var(--gray_color);
+    font-size: var(--lg);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.contact-us input:hover,
+.contact-us textarea:hover {
+    background-color: rgba(233, 238, 228, 0.6);
+}
+
+.contact-us input:focus,
+.contact-us textarea:focus {
+    background-color: rgba(201, 204, 197, 0.5);
+}
+
+.contact-us input {
+    height: 80px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.contact-us textarea {
+    padding: 20px 40px;
+    height: 300px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.contact-us button {
+    color: var(--white_color);
+    background-color: var(--tertiary_color);
+    border: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 16px 0;
+    font-size: var(--lg);
+    width: 100%;
+    text-align: center;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.contact-us button:hover {
+    opacity: .8;
+}
+
+.map h2 {
+    font-size: var(--h1);
+    font-weight: 700;
+    font-family: var(--serif);
+    color: var(--primary_color);
+}
+/* Contact us CSS End */

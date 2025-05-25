@@ -1,0 +1,697 @@
+@media (min-width: 1400px) {
+    .home-hero-slider .slider-content-inner h2 {
+        font-size: var(--h1);
+    }
+
+    .boat-page.images-grid img,
+    .whixall-marina-page.images-grid img {
+        height: 360px;
+    }
+
+    .cruise-stay .holiday-card .img img {
+        height: 320px;
+    }
+
+    .whixall-marina .images img {
+        height: 400px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    :root {
+        --big_title: 48px;
+        --h1: 45px;
+        --h2: 38px;
+        --h3: 31px;
+        --h4: 25px;
+        --h5: 22px;
+        --h6: 18px;
+        --lg: 18px;
+        --bs: 16px;
+        --sm: 14px;
+    }
+
+    .home-hero-slider .slider-content {
+        height: 620px;
+    }
+
+    .page-hero-slider .slider-content {
+        height: 550px;
+    }
+
+    .home-hero-slider .slider-content-inner h2 {
+        font-size: var(--h3);
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    :root {
+        --big_title: 45px;
+        --h1: 43px;
+        --h2: 37px;
+        --h3: 31px;
+        --h4: 25px;
+        --h5: 22px;
+        --h6: 18px;
+        --lg: 18px;
+        --bs: 16px;
+        --sm: 14px;
+    }
+
+    .home-hero-slider .slider-content {
+        height: 580px;
+    }
+
+    .page-hero-slider .slider-content {
+        height: 500px;
+    }
+
+    .home-hero-slider .slider-content-inner h2 {
+        font-size: var(--h3);
+    }
+
+    .home-hero-slider .slider-content-inner {
+        padding: 32px;
+        margin-bottom: 32px;
+    }
+
+    .luxury-boats .bottom p {
+        --lg: 20px;
+    }
+
+    .canal-cruising p.text-primary-color {
+        --lg: 18px;
+        font-size: var(--lg);
+    }
+    
+    .canal-cruising p {
+        font-size: var(--bs);
+    }
+
+    .whixall-marina .images img {
+        height: 320px;
+    }
+
+    .cruise-stay .holiday-card .img img {
+        height: 220px;
+    }
+
+    .boat-page.images-grid img,
+    .whixall-marina-page.images-grid img {
+        height: 220px;
+    }
+
+    .cruise-stay p {
+        font-size: var(--bs);
+    }
+
+    .canal-cruising-heaven .text-lg,
+    .whixall-marina-page p.text-lg {
+        font-size: var(--lg);
+    }
+
+    .canal-cruising-heaven p,
+    .whixall-marina-page p {
+        font-size: var(--bs);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    :root {
+        --big_title: 40px;
+        --h1: 38px;
+        --h2: 35px;
+        --h3: 28px;
+        --h4: 24px;
+        --h5: 21px;
+        --h6: 18px;
+        --lg: 18px;
+        --bs: 16px;
+        --sm: 14px;
+    }
+
+    .main-header .header-bottom .page-navigation {
+        top: 166px;
+    }
+
+    .home-hero-slider .slider-content {
+        height: 500px;
+    }
+
+    .page-hero-slider .slider-content {
+        height: 450px;
+    }
+
+    .home-hero-slider .slider-content-inner h2 {
+        font-size: var(--h3);
+    }
+
+    .home-hero-slider .slider-content-inner {
+        padding: 32px;
+        margin-bottom: 32px;
+    }
+
+    .luxury-boats .bottom p {
+        --lg: 18px;
+    }
+
+    .luxury-boats .bottom .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .canal-cruising p.text-primary-color {
+        --lg: 18px;
+        font-size: var(--lg);
+    }
+    
+    .canal-cruising p {
+        font-size: var(--bs);
+    }
+
+    .whixall-marina .images img {
+        height: 280px;
+    }
+
+    .cruise-stay .holiday-card .img img {
+        height: 200px;
+    }
+
+    .cruise-stay p {
+        font-size: var(--bs);
+    }
+
+    .boat-page.images-grid img,
+    .whixall-marina-page.images-grid img {
+        height: 250px;
+    }
+
+    .boat-page.images-grid,
+    .whixall-marina-page.images-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .canal-cruising-heaven .text-lg,
+    .whixall-marina-page p.text-lg {
+        font-size: var(--lg);
+    }
+
+    .canal-cruising-heaven p,
+    .whixall-marina-page p {
+        font-size: var(--bs);
+    }
+
+    .accommodation h4 {
+        font-size: var(--h5);
+    }
+
+    .accommodation ul li {
+        font-size: var(--bs);
+    }
+
+    .boat-layout .action {
+        --lg: 20px;
+        padding: 6px 20px;
+    }
+
+    .canal-map h4 {
+        font-size: var(--h3);
+    }
+
+    .canal-map h5 {
+        font-size: var(--h5);
+    }
+
+    .canal-map p,
+    .canal-map a {
+        font-size: var(--bs);
+    }
+
+    .contact-us .logo img,
+    .contact-us .duck img {
+        width: 50% !important;
+    }
+
+    .contact-us address,
+    .contact-us .contact-details a,
+    .contact-us p {
+        font-size: var(--bs);
+    }
+
+    .contact-us input, .contact-us textarea {
+        font-size: var(--bs);
+    }
+
+    .contact-us input {
+        height: 60px;
+    }
+
+    .contact-us textarea {
+        height: 220px;
+    }
+
+    .contact-us button {
+        padding: 12px 0;
+        font-size: var(--bs);
+    }
+}
+
+@media (max-width: 991.98px) {
+    .main-header .header-top p a {
+        padding: 2px 4px;
+        line-height: 1.3;
+    }
+
+    .main-header .header-bottom .solidbar {
+        padding: 8px 0;
+        display: block;
+    }
+
+    .main-header .header-bottom .page-navigation {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: rgba(75, 126, 55, 0.8);
+        display: none;
+    }
+
+    .main-header .header-bottom .navigation-items {
+        text-align: center;
+    }
+
+    .main-header .header-bottom ul li,
+    .main-header .header-bottom ul li.hover-dropdown .hover-dropdown-child li {
+        padding: 8px 0;
+    }
+
+    .main-header .header-bottom ul li.hover-dropdown.active {
+        padding: 0 0;
+    }
+
+    .main-header .header-bottom ul li.hover-dropdown.active .hover-dropdown-parent {
+        font-weight: 600;
+        color: var(--yellow_color);
+    }
+
+    .main-header .header-bottom ul li.hover-dropdown .hover-dropdown-child {
+        position: static;
+        top: 0;
+        left: 0;
+        padding: 0;
+        background-color: transparent;
+        width: 100%;
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        -o-transform: translateX(0);
+    }
+
+    .main-header .header-bottom ul li.hover-dropdown .hover-dropdown-child a {
+        color: var(--yellow_color);
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    :root {
+        --big_title: 34px;
+        --h1: 34px;
+        --h2: 30px;
+        --h3: 25px;
+        --h4: 22px;
+        --h5: 20px;
+        --h6: 17px;
+        --lg: 17px;
+        --bs: 15px;
+        --sm: 13px;
+    }
+
+    .main-header .header-bottom .page-navigation {
+        top: 152px;
+    }
+
+    .home-hero-slider .slider-content {
+        height: 480px;
+    }
+
+    .page-hero-slider .slider-content {
+        height: 420px;
+    }
+
+    .home-hero-slider .slider-content-inner h2 {
+        font-size: var(--h3);
+    }
+
+    .home-hero-slider .slider-content-inner {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .luxury-boats .top,
+    .canal-cruising-heaven .top,
+    .whixall-marina-page .top {
+        padding: 16px 0;
+    }
+
+    .luxury-boats .bottom p {
+        --lg: 18px;
+    }
+
+    .luxury-boats .bottom .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .canal-cruising p.text-primary-color {
+        --lg: 18px;
+        font-size: var(--lg);
+    }
+    
+    .canal-cruising p {
+        font-size: var(--bs);
+    }
+
+    .whixall-marina .images img {
+        height: 280px;
+    }
+
+    .cruise-stay .card-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cruise-stay .holiday-card .img img {
+        height: 260px;
+    }
+
+    .cruise-stay p {
+        font-size: var(--bs);
+    }
+
+    .boat-page.images-grid img,
+    .whixall-marina-page.images-grid img {
+        height: 250px;
+    }
+
+    .boat-page.images-grid,
+    .whixall-marina-page.images-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .canal-cruising-heaven .text-lg,
+    .whixall-marina-page p.text-lg {
+        font-size: var(--lg);
+    }
+
+    .canal-cruising-heaven p,
+    .whixall-marina-page p {
+        font-size: var(--bs);
+    }
+
+    .accommodation h4 {
+        font-size: var(--h5);
+    }
+
+    .accommodation ul li {
+        font-size: var(--bs);
+    }
+
+    .boat-layout .action {
+        --lg: 20px;
+        padding: 6px 20px;
+    }
+
+    .canal-map-title h2 {
+        font-size: var(--h2);
+    }
+
+    .canal-map h4 {
+        font-size: var(--h3);
+    }
+
+    .canal-map h5 {
+        font-size: var(--h5);
+    }
+
+    .canal-map p,
+    .canal-map a {
+        font-size: var(--bs);
+    }
+
+    .contact-us .logo img,
+    .contact-us .duck img {
+        width: 50% !important;
+    }
+
+    .contact-us address,
+    .contact-us .contact-details a,
+    .contact-us p {
+        font-size: var(--bs);
+    }
+
+    .contact-us input, .contact-us textarea {
+        font-size: var(--bs);
+    }
+
+    .contact-us input {
+        height: 60px;
+    }
+
+    .contact-us textarea {
+        height: 220px;
+    }
+
+    .contact-us button {
+        padding: 12px 0;
+        font-size: var(--bs);
+    }
+
+    .whixall-marina-page .duck-icon img {
+        width: 50% !important;
+    }
+
+    .main-header .header-bottom .solidbar i {
+        font-size: 20px;
+        padding: 6px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    :root {
+        --big_title: 34px;
+        --h1: 34px;
+        --h2: 30px;
+        --h3: 25px;
+        --h4: 22px;
+        --h5: 20px;
+        --h6: 16px;
+        --lg: 16px;
+        --bs: 15px;
+        --sm: 13px;
+    }
+
+    .main-header .header-bottom .page-navigation {
+        top: 156px;
+    }
+
+    .home-hero-slider .slider-content {
+        height: 420px;
+    }
+
+    .home-hero-slider .next, 
+    .home-hero-slider .prev, 
+    .page-hero-slider .next, 
+    .page-hero-slider .prev {
+        display: none !important;
+    }
+
+    .page-hero-slider .slider-content {
+        height: 340px;
+    }
+
+    .home-hero-slider .slider-content-inner h2 {
+        font-size: var(--h3);
+    }
+
+    .home-hero-slider .slider-content-inner {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .luxury-boats .top,
+    .canal-cruising-heaven .top,
+    .whixall-marina-page .top {
+        padding: 16px 0;
+    }
+
+    .luxury-boats .bottom p {
+        --lg: 18px;
+    }
+
+    .luxury-boats .bottom .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .canal-cruising p.text-primary-color {
+        --lg: 18px;
+        font-size: var(--lg);
+    }
+    
+    .canal-cruising p {
+        font-size: var(--bs);
+    }
+
+    .whixall-marina .images img {
+        height: 280px;
+    }
+
+    .cruise-stay .card-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cruise-stay .holiday-card .img img {
+        height: 260px;
+    }
+
+    .cruise-stay p {
+        font-size: var(--bs);
+    }
+
+    .boat-page.images-grid img,
+    .whixall-marina-page.images-grid img {
+        height: 200px;
+    }
+
+    .boat-page.images-grid,
+    .whixall-marina-page.images-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .canal-cruising-heaven .text-lg,
+    .whixall-marina-page p.text-lg {
+        font-size: var(--lg);
+    }
+
+    .canal-cruising-heaven p,
+    .whixall-marina-page p {
+        font-size: var(--bs);
+    }
+
+    .accommodation h4 {
+        font-size: var(--h5);
+    }
+
+    .accommodation ul li {
+        font-size: var(--bs);
+    }
+
+    .boat-layout .action {
+        --lg: 20px;
+        padding: 6px 20px;
+    }
+
+    .canal-map-title h2 {
+        font-size: var(--h2);
+    }
+
+    .canal-map h4 {
+        font-size: var(--h3);
+    }
+
+    .canal-map h5 {
+        font-size: var(--h5);
+    }
+
+    .canal-map p,
+    .canal-map a {
+        font-size: var(--bs);
+    }
+
+    .contact-us .logo img,
+    .contact-us .duck img {
+        width: 50% !important;
+    }
+
+    .contact-us address,
+    .contact-us .contact-details a,
+    .contact-us p {
+        font-size: var(--bs);
+    }
+
+    .contact-us input, .contact-us textarea {
+        font-size: var(--bs);
+    }
+
+    .contact-us input {
+        height: 60px;
+    }
+
+    .contact-us textarea {
+        height: 220px;
+    }
+
+    .contact-us button {
+        padding: 12px 0;
+        font-size: var(--bs);
+    }
+
+    .whixall-marina-page .duck-icon img {
+        width: 50% !important;
+    }
+
+    .main-header .header-bottom .solidbar i {
+        font-size: 20px;
+        padding: 6px;
+    }
+
+    .main-footer .logo img {
+        width: 50% !important;
+    }
+}
+
+@media (max-width: 570.98px) {
+    .main-header .header-bottom .page-navigation {
+        top: 154px;
+    }
+}
+
+@media (max-width: 555.98px) {
+    .main-header .header-bottom .page-navigation {
+        top: 152px;
+    }
+}
+
+@media (max-width: 539.98px) {
+    .main-header .header-bottom .page-navigation {
+        top: 150px;
+    }
+}
+
+@media (max-width: 523.98px) {
+    .main-header .header-bottom .page-navigation {
+        top: 148px;
+    }
+}
+
+@media (max-width: 507.98px) {
+    .main-header .header-bottom .page-navigation {
+        top: 146px;
+    }
+}
+
+@media (max-width: 492.98px) {
+    .main-header .header-bottom .page-navigation {
+        top: 144px;
+    }
+}
+
+@media (max-width: 476.98px) {
+    .main-header .header-bottom .page-navigation {
+        top: 142px;
+    }
+}
+
+@media (max-width: 461.98px) {
+    .main-header .header-bottom .page-navigation {
+        top: 140px;
+    }
+}
