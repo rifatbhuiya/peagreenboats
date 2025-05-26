@@ -234,6 +234,16 @@ body {
 .main-header .header-top {
     padding: 20px 0;
     background-color: var(--primary_color);
+    transition: var(--transition);
+    -webkit-transition: var(--transition);
+    -moz-transition: var(--transition);
+    -ms-transition: var(--transition);
+    -o-transition: var(--transition);
+}
+
+.main-header.fixed-header .header-top {
+    padding: 12px 0;
+    background-color: rgba(75, 126, 55, 0.8);
 }
 
 .main-header .header-top p {
@@ -258,13 +268,17 @@ body {
     background-color: var(--secondary_color);
 }
 
-.main-header .header-bottom .solidbar {
+.main-header.fixed-header .header-bottom {
+    background-color: rgba(114, 147, 87, 0.8);
+}
+
+.main-header .solidbar {
     display: none;
     background-color: transparent;
     border: none;
 }
 
-.main-header .header-bottom .solidbar i {
+.main-header .solidbar i {
     font-size: 22px;
     padding: 8px;
     color: var(--secondary_color);
@@ -281,13 +295,17 @@ body {
     -o-transition: var(--transition);
 }
 
-.main-header .header-bottom .solidbar.active i,
-.main-header .header-bottom .solidbar:hover i {
+.main-header .solidbar.active i,
+.main-header .solidbar:hover i {
     background-color: var(--yellow_color);
 }
 
 .main-header .header-bottom ul li {
     padding: 12px 0;
+}
+
+.main-header.fixed-header .header-bottom ul li {
+    padding: 8px 0;
 }
 
 .main-header .header-bottom ul li a {
@@ -326,6 +344,10 @@ body {
     -moz-transition: var(--transition);
     -ms-transition: var(--transition);
     -o-transition: var(--transition);
+}
+
+.main-header.fixed-header .header-bottom ul li.hover-dropdown .hover-dropdown-child {
+    top: 42px;
 }
 
 .main-header .header-bottom ul li.hover-dropdown:hover .hover-dropdown-parent {
