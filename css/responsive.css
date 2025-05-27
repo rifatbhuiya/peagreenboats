@@ -360,6 +360,10 @@
         --sm: 13px;
     }
 
+    .about .about-card .total-users {
+        --lg: 20px;
+    }
+
     .main-header .header-bottom .page-navigation {
         top: 104px;
     }
@@ -525,6 +529,10 @@
         --lg: 16px;
         --bs: 15px;
         --sm: 13px;
+    }
+
+    .about .about-card .total-users {
+        --lg: 17px;
     }
 
     .main-header .header-bottom .page-navigation {
