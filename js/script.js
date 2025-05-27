@@ -36,6 +36,7 @@
         $('.solidbar').on('click', function () {
             $('.page-navigation').toggle(500);
             $(this).toggleClass('active');
+            $('.hover-dropdown-child').show();
 
             $('.hover-dropdown').on('click', function () {
                 $('.hover-dropdown').toggleClass('active');

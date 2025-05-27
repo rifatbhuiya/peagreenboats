@@ -347,7 +347,7 @@ body {
 }
 
 .main-header.fixed-header .header-bottom ul li.hover-dropdown .hover-dropdown-child {
-    top: 42px;
+    top: 40px;
 }
 
 .main-header .header-bottom ul li.hover-dropdown:hover .hover-dropdown-parent {
