@@ -281,7 +281,7 @@ body {
 .main-header .solidbar i {
     font-size: 22px;
     padding: 8px;
-    color: var(--secondary_color);
+    color: var(--primary_color);
     background-color: var(--white_color);
     border-radius: var(--round_md);
     -webkit-border-radius: var(--round_md);
